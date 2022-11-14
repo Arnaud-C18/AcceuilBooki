@@ -25,7 +25,6 @@ nav {
 }
 
 .logoBooki {
-  position: relative;
   height: 19px;
   margin-top: 44px;
   margin-left: 55px;
@@ -50,16 +49,12 @@ nav {
   padding-top: 46px;
 }
 
-header {
-  position: relative;
-}
-
-header h1 {
+#title {
   margin-top: 59px;
   margin-left: 55px;
 }
 
-header p {
+#subtitle {
   margin-top: 4px;
   margin-left: 55px;
 }
@@ -75,7 +70,7 @@ header p {
   background-color: #d9d9d9;
 }
 
-#autoLocate {
+#locationLogo {
   height: 48px;
   width: 48px;
   margin-left: 1px;
@@ -85,8 +80,6 @@ header p {
 }
 
 #cityName {
-  display: flex;
-  margin: auto;
   height: 48px;
   background-color: white;
   margin-left: 1px;
@@ -97,12 +90,12 @@ header p {
 }
 
 #cityName::placeholder {
-    font-size: 18px;
-    color: black;
-    font-weight: bolder;
+  font-size: 18px;
+  color: black;
+  font-weight: bolder;
 }
 
-#search {
+#search a {
   color: white;
   font-size: 18px;
   background-color: #0065fc;
@@ -110,10 +103,61 @@ header p {
   height: 48px;
   padding-left: 16px;
   padding-right: 16px;
-  width: auto;
   display: flex;
   align-items: center;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   margin-right: 1px;
+}
+
+#filter {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  margin-top: 46px;
+  margin-left: 62px;
+}
+
+#filter p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+  display: block;
+}
+
+.filters a {
+  display: flex;
+  font-size: 17px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-left: 40px;
+  border-radius: 25px;
+  border: 2px solid #d9d9d9;
+}
+
+.filters a:hover {
+  background-color: #deebff;
+}
+
+.filters i {
+  color: #0065fc;
+  padding-right: 10px;
+}
+
+#disponibleLocation {
+  margin-top: 57px;
+  margin-left: 69px;
+}
+
+#disponibleLocation i{
+  color: #0065fc;
+  padding: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-right: 11px;
+  border: 1px solid #d9d9d9;
+  border-radius: 80px;
 }

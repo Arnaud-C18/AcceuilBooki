@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
     <script
@@ -12,28 +12,53 @@
     <title>Booki</title>
   </head>
 
-  <header>
-    <nav>
-      <img src="images/logo/Booki.png" alt="logo Booki" class="logoBooki" />
-      <ul id="navMenu">
-        <li><a href="#">Hébergements</a></li>
-        <li><a href="#">Activités</a></li>
-      </ul>
-    </nav>
+  <body>
+    <header>
+      <nav>
+        <img src="images/logo/Booki.png" alt="logo Booki" class="logoBooki" />
+        <ul id="navMenu">
+          <li><a href="#">Hébergements</a></li>
+          <li><a href="#">Activités</a></li>
+        </ul>
+      </nav>
 
-    <div id="title">
-      <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-      <p>En plein centre-ville ou en pleine nature</p>
-    </div>
-    <div id="searchBar">
-      <div id="autoLocate"><i class="fa-solid fa-location-dot"></i></div>
-      <div>
-        <input id="cityName" type="search" size="20" placeholder="Marseille, France" />
+      <div id="title">
+        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
       </div>
-      <div id="search">Rechercher</div>
-    </div>
-  </header>
+      <div id="subtitle">
+        <p>En plein centre-ville ou en pleine nature</p>
+      </div>
 
-  <body></body>
-  <footer></footer>
+      <div id="searchBar">
+        <div id="locationLogo"><i class="fa-solid fa-location-dot"></i></div>
+        <div>
+          <input
+            id="cityName"
+            type="search"
+            size="20"
+            placeholder="Marseille, France"
+          />
+        </div>
+        <div id="search"><a href="#">Rechercher</a></div>
+      </div>
+      <div id="filter">
+        <div>
+          <h3>Filtres</h3>
+        </div>
+        <div class="filters">
+          <a href="#"><i class="fa-solid fa-money-bill-wave"></i> Économique</a>
+        </div>
+        <div class="filters">
+          <a href="#"><i class="fa-solid fa-person"></i> Familial</a>
+        </div>
+        <div class="filters">
+          <a href="#"><i class="fa-solid fa-heart"></i> Romantique</a>
+        </div>
+        <div class="filters">
+          <a href="#"><i class="fa-solid fa-dog"></i> Animaux autorisés</a>
+        </div>
+      </div>
+      <div id="disponibleLocation"><p><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p></div>
+    </header>
+  </body>
 </html>
