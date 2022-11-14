@@ -1,3 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  max-width: 1400px;
+  margin: auto;
+}
+
 h1 {
-    background-color: brown;
+  font-size: 22px;
+}
+
+p {
+  font-size: 16px;
+}
+
+nav {
+  font-size: 16px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.logoBooki {
+  position: relative;
+  height: 19px;
+  margin-top: 44px;
+  margin-left: 55px;
+}
+
+#navMenu {
+  display: flex;
+  margin-right: 52px;
+}
+
+#navMenu a {
+  display: inline-block;
+  padding-top: 48px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+}
+
+#navMenu a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 46px;
+}
+
+header {
+  position: relative;
+}
+
+header h1 {
+  margin-top: 59px;
+  margin-left: 55px;
+}
+
+header p {
+  margin-top: 4px;
+  margin-left: 55px;
+}
+
+#searchBar {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 55px;
+  display: flex;
+  width: 410px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #d9d9d9;
+}
+
+#autoLocate {
+  height: 48px;
+  width: 48px;
+  margin-left: 1px;
+  display: flex;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+#cityName {
+  display: flex;
+  margin: auto;
+  height: 48px;
+  background-color: white;
+  margin-left: 1px;
+  padding: 16px;
+  font-size: 18px;
+  border-style: none;
+  font-weight: bold;
+}
+
+#cityName::placeholder {
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+}
+
+#search {
+  color: white;
+  font-size: 18px;
+  background-color: #0065fc;
+  font-weight: bold;
+  height: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-right: 1px;
 }
