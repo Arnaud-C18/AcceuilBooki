@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 * {
   font-family: "Raleway", sans-serif;
@@ -9,19 +9,34 @@
   margin: auto;
 }
 
-h1 {
-  font-size: 22px;
+p {
+  font-size: 18px;
+  font-weight: 700;
 }
 
-p {
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h2 {
   font-size: 16px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 nav {
   font-size: 16px;
   display: flex;
-  position: relative;
-  justify-content: space-between;
 }
 
 .logoBooki {
@@ -36,7 +51,7 @@ nav {
 }
 
 #navMenu a {
-  display: inline-block;
+  display: block;
   padding-top: 48px;
   padding-left: 25px;
   padding-right: 25px;
@@ -50,21 +65,20 @@ nav {
 }
 
 #title {
-  margin-top: 59px;
+  margin-top: 54px;
   margin-left: 55px;
 }
 
 #subtitle {
-  margin-top: 4px;
+  margin-top: 8px;
   margin-left: 55px;
 }
 
 #searchBar {
-  position: relative;
   margin-top: 20px;
   margin-left: 55px;
   display: flex;
-  width: 410px;
+  width: 430px;
   height: 50px;
   border-radius: 15px;
   background-color: #d9d9d9;
@@ -82,24 +96,23 @@ nav {
 #cityName {
   height: 48px;
   background-color: white;
-  margin-left: 1px;
   padding: 16px;
   font-size: 18px;
+  font-weight: 700;
   border-style: none;
-  font-weight: bold;
 }
 
 #cityName::placeholder {
   font-size: 18px;
+  font-weight: 700;
   color: black;
-  font-weight: bolder;
 }
 
 #search a {
   color: white;
-  font-size: 18px;
   background-color: #0065fc;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
   height: 48px;
   padding-left: 16px;
   padding-right: 16px;
@@ -112,25 +125,16 @@ nav {
 
 #filter {
   display: flex;
-  justify-content: center;
-  width: 900px;
-  margin-top: 46px;
+  width: 940px;
+  margin-top: 25px;
   margin-left: 62px;
-}
-
-#filter p {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px;
-  display: block;
 }
 
 .filters a {
   display: flex;
   font-size: 17px;
-  font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-weight: 700;
+  padding: 20px;
   padding-top: 14px;
   padding-bottom: 14px;
   margin-left: 40px;
@@ -144,20 +148,210 @@ nav {
 
 .filters i {
   color: #0065fc;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 #disponibleLocation {
-  margin-top: 57px;
+  margin-top: 25px;
   margin-left: 69px;
 }
 
-#disponibleLocation i{
+#disponibleLocation i {
+  width: 4px;
+  height: 10px;
   color: #0065fc;
-  padding: 10px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-left: 9px;
+  padding-right: 11px;
+  padding-top: 4px;
+  padding-bottom: 10px;
   margin-right: 11px;
   border: 1px solid #d9d9d9;
-  border-radius: 80px;
+  border-radius: 100px;
+}
+
+#mainAndPopular {
+  display: flex;
+}
+
+#mainSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 626px;
+  width: 880px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+
+#mainSectionTitle {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#mainSectionFirstRow {
+  display: flex;
+  margin-top: 8px;
+  margin-left: 25px;
+}
+
+#mainSectionSecondRow {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.mainSectionArticle {
+  width: 246px;
+  height: 199px;
+  margin-right: 31px;
+  border-radius: 20px;
+  background-color: white;
+  border: 5px solid white;
+  overflow: hidden;
+}
+
+.mainSectionArticle a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.mainSectionArticleImage {
+  width: 246px;
+  height: 126px;
+}
+
+.mainSectionArticle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mainSectionArticleText {
+  display: block;
+  height: 75px;
+  background-color: white;
+  margin-top: 4px;
+  margin-left: 16px;
+}
+
+.mainSectionArticleName {
+  display: block;
+}
+
+.mainSectionArticlePrice {
+  display: block;
+  margin-top: 4px;
+}
+
+.mainSectionArticleStar{
+  display: block;
+  margin-top: 4px;
+}
+
+.mainSectionArticleStar i {
+  color: #0065fc;
+  font-size: 13px;
+  
+}
+
+#mainSectionSeeMore {
+  display: block;
+  margin-left: 44px;
+  margin-bottom: 25px;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#popularSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 625px;
+  width: 420px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+
+#popularSectionTitle {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#popularSectionTitle i {
+  display: block;
+  width: 18px;
+  color: #0065fc;
+  margin-left: 115px;
+}
+
+.popularSectionArticle {
+  width: 343px;
+  height: 144px;
+  margin-left: 33px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: white;
+  border: 5px solid white;
+  overflow: hidden;
+}
+
+.popularSectionArticle a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.popularSectionArticleImage {
+  margin-left: 0px;
+  width: 137px;
+  height: 144px;
+}
+
+.popularSectionArticle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.popularSectionArticleText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 180px;
+  height: 144px;
+}
+
+.popularSectionArticleName {
+  display: block;
+  margin-top: 11px;
+  margin-left: 0px;
+}
+
+.popularSectionArticlePrice {
+  display: block;
+  margin-top: -20px;
+  margin-left: 0px;
+
+}
+
+.popularSectionArticleStar {
+  display: block;
+  width: 74px;
+  margin-left: 0px;
+  margin-bottom: 7px;
+  font-size: 13px;
+  background-color: beige;
+}
+
+.popularSectionArticleText i {
+  color: #0065fc;
 }
