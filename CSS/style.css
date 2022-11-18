@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
+/* general */
+
 * {
   font-family: "Raleway", sans-serif;
   color: black;
@@ -26,23 +28,29 @@ h2 {
 
 h3 {
   font-size: 16px;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 14px;
   font-weight: 400;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*header*/
+/*navigateur*/
 
 nav {
   font-size: 16px;
   display: flex;
 }
 
-.logoBooki {
+#logoBooki {
   height: 19px;
+  width: 61px;
   margin-top: 44px;
-  margin-left: 55px;
+  margin-left: 35px;
 }
 
 #navMenu {
@@ -66,17 +74,20 @@ nav {
 
 #title {
   margin-top: 54px;
-  margin-left: 55px;
+  margin-left: 35px;
 }
 
 #subtitle {
   margin-top: 8px;
-  margin-left: 55px;
+  margin-left: 35px;
 }
+
+/*main*/
+/*bar de recherche*/
 
 #searchBar {
   margin-top: 20px;
-  margin-left: 55px;
+  margin-left: 35px;
   display: flex;
   width: 430px;
   height: 50px;
@@ -123,37 +134,60 @@ nav {
   margin-right: 1px;
 }
 
-#filter {
+/*filtres*/
+
+#filterSection {
   display: flex;
-  width: 940px;
+  justify-content: space-between;
+  max-width: 930px;
+  width: 95%;
   margin-top: 25px;
-  margin-left: 62px;
+  margin-left: 42px;
 }
 
-.filters a {
+#filterSectionTitle {
+  height: 21px;
+  width: 54px;
+  margin: 0px;
+  margin-top: 15px;
+}
+
+.filter {
   display: flex;
   font-size: 17px;
   font-weight: 700;
-  padding: 20px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  margin-left: 40px;
+  height: 50px;
+  width: auto;
+  margin: 0px;
   border-radius: 25px;
   border: 2px solid #d9d9d9;
+  overflow: hidden;
 }
 
-.filters a:hover {
-  background-color: #deebff;
+.filter a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.filters i {
+.filter i {
   color: #0065fc;
   margin-right: 10px;
 }
 
+.filterText {
+  width: auto;
+}
+
+.filter a:hover {
+  background-color: #deebff;
+}
+
 #disponibleLocation {
   margin-top: 25px;
-  margin-left: 69px;
+  margin-left: 49px;
 }
 
 #disponibleLocation i {
@@ -173,13 +207,15 @@ nav {
   display: flex;
 }
 
+/*hebergements*/
+
 #mainSection {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  margin-left: 50px;
+  margin-left: 2%;
   height: 626px;
-  width: 880px;
+  width: 63%;
   background-color: #d9d9d9;
   border-radius: 20px;
 }
@@ -191,24 +227,29 @@ nav {
 
 #mainSectionFirstRow {
   display: flex;
-  margin-top: 8px;
-  margin-left: 25px;
+  justify-content: space-between;
+  margin-top: 23px;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
 }
 
 #mainSectionSecondRow {
   display: flex;
-  margin-top: 5px;
-  margin-left: 25px;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
 }
 
 .mainSectionArticle {
-  width: 246px;
+  width: 28%;
   height: 199px;
-  margin-right: 31px;
+  margin: 0px;
   border-radius: 20px;
   background-color: white;
   border: 5px solid white;
   overflow: hidden;
+  box-shadow: 7px 7px 14px #c4c4c4;
 }
 
 .mainSectionArticle a {
@@ -219,15 +260,9 @@ nav {
 }
 
 .mainSectionArticleImage {
+  display: block;
   width: 246px;
   height: 126px;
-}
-
-.mainSectionArticle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .mainSectionArticleText {
@@ -240,14 +275,19 @@ nav {
 
 .mainSectionArticleName {
   display: block;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .mainSectionArticlePrice {
   display: block;
   margin-top: 4px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.mainSectionArticleStar{
+.mainSectionArticleStar {
   display: block;
   margin-top: 4px;
 }
@@ -255,7 +295,7 @@ nav {
 .mainSectionArticleStar i {
   color: #0065fc;
   font-size: 13px;
-  
+
 }
 
 #mainSectionSeeMore {
@@ -267,39 +307,60 @@ nav {
   font-weight: 700;
 }
 
+/*populaires*/
+
 #popularSection {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  margin-left: 50px;
+  margin-left: 42px;
+  margin-right: 2%;
   height: 625px;
-  width: 420px;
+  width: 30%;
   background-color: #d9d9d9;
   border-radius: 20px;
 }
 
 #popularSectionTitle {
   display: flex;
-  margin-top: 40px;
-  margin-left: 40px;
+  height: 26px;
+  width: 82%;
+  margin-top: 41px;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+#popularSectionTitleText {
+  display: block;
+  width: 90%;
+  margin-left: 0px;
+}
+
+#popularSectionTitleLogo {
+  padding-left: 10px;
 }
 
 #popularSectionTitle i {
   display: block;
   width: 18px;
   color: #0065fc;
-  margin-left: 115px;
+}
+
+#popularSectionRow {
+  margin: 0px;
 }
 
 .popularSectionArticle {
-  width: 343px;
+  width: 82%;
   height: 144px;
-  margin-left: 33px;
+  margin-left: 9%;
+  margin-right: 9%;
   margin-bottom: 20px;
   border-radius: 20px;
   background-color: white;
   border: 5px solid white;
   overflow: hidden;
+  box-shadow: 7px 7px 14px #c4c4c4;
 }
 
 .popularSectionArticle a {
@@ -309,16 +370,10 @@ nav {
 }
 
 .popularSectionArticleImage {
+  display: block;
   margin-left: 0px;
   width: 137px;
   height: 144px;
-}
-
-.popularSectionArticle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .popularSectionArticleText {
@@ -326,7 +381,9 @@ nav {
   flex-direction: column;
   margin-left: 0px;
   margin-top: 0px;
-  width: 180px;
+  padding-left: 10px;
+  padding-right: 5px;
+  width: 160px;
   height: 144px;
 }
 
@@ -334,13 +391,17 @@ nav {
   display: block;
   margin-top: 11px;
   margin-left: 0px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .popularSectionArticlePrice {
   display: block;
-  margin-top: -20px;
+  margin-top: 0px;
+  padding-top: 0px;
   margin-left: 0px;
-
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .popularSectionArticleStar {
@@ -349,9 +410,187 @@ nav {
   margin-left: 0px;
   margin-bottom: 7px;
   font-size: 13px;
-  background-color: beige;
 }
 
 .popularSectionArticleText i {
   color: #0065fc;
+}
+
+/*activite*/
+
+#activitySectionTitle {
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+#activitySection {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  height: 445px;
+  margin-top: 18px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.activitySectionArticle {
+  margin: 0%;
+  width: 22.5%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 7px 7px 14px #c4c4c4;
+}
+
+.activitySectionArticle a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.activitySectionArticleImage {
+  display: block;
+  width: 100%;
+  height: 389px;
+  margin: 0px;
+}
+
+.activitySectionArticleText {
+  display: flex;
+  white-space: wrap;
+  width: auto;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/*footer*/
+
+footer {
+  width: 96%;
+  height: 225px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #d9d9d9;
+}
+
+#footerFirstSection {
+  display: block;
+  width: 250px;
+  margin: 0px;
+  margin-top: 45px;
+}
+
+#footerSecondSection {
+  display: block;
+  width: 250px;
+  margin: 0px;
+  margin-top: 45px;
+}
+
+#footerThirdSection {
+  display: block;
+  width: 250px;
+  margin: 0px;
+  margin-top: 45px;
+}
+
+.footerSectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.footerSectionLink {
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*affichage tablette*/
+
+@media (max-width: 992px) {
+
+  #filterSection {
+    margin-left: 2%;
+  }
+
+  .filter a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #mainAndPopular {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mainSection {
+    width: 96%;
+    margin-right: 2%;
+  }
+
+  #popularSection {
+    flex-direction: row;
+    margin-top: 53px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 278px;
+    width: 96%;
+  }
+
+  #popularSection {
+    display: flex;
+    flex-direction: column;
+    }
+
+    #popularSectionTitle {
+      width: auto;
+      margin-left: 4.5%;
+      margin-right: 4.5%;
+    }
+
+  #popularSectionRow {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+    margin-bottom: 48px;
+    margin-top: 26px;
+  }
+
+  .popularSectionArticle {
+    width: 30%;
+    margin: 0px;
+  }
+
+  #activitySectionTitle {
+    margin-top: 70px;
+  }
+
+  #activitySection {
+    margin-top: 34px;
+    height: 267px;
+  }
+
+  .activitySectionArticle {
+    height: 267px;
+  }
+
+  .activitySectionArticleImage {
+    height: 211px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  * {
+    background-color: green;
+  }
 }
