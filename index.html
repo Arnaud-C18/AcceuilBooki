@@ -13,11 +13,13 @@
 <body>
   <header>
     <nav>
-      <img src="images/logo/Booki.png" alt="logo Booki" id="logoBooki" />
-      <ul id="navMenu">
-        <li><a href="#ancreHebergement">Hébergements</a></li>
-        <li><a href="#ancreActivite">Activités</a></li>
-      </ul>
+      <figure id="logoBooki"><img src="images/logo/Booki.png" alt="logo Booki" /></figure>
+      <div id="navMenu">
+        <ul>
+          <li><a href="#ancreHebergement">Hébergements</a></li>
+          <li><a href="#ancreActivite">Activités</a></li>
+        </ul>
+      </div>
     </nav>
 
     <div id="title">
@@ -30,41 +32,47 @@
   <main>
     <div id="searchBar">
       <div id="locationLogo"><i class="fa-solid fa-location-dot"></i></div>
-      <div>
-        <input id="cityName" type="search" size="20" placeholder="Marseille, France" />
+      <div id="cityName">
+        <input type="search" size="16" placeholder="Marseille, France" />
       </div>
-      <div id="search"><a href="#">Rechercher</a></div>
+      <div id="searchLetter"><a href="#">Rechercher</a></div>
+      <div id="searchLogo"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
     </div>
     <div id="filterSection">
       <div id="filterSectionTitle">
         <p>Filtres</p>
       </div>
-      <div class="filter">
-        <a href="#"><span><i class="fa-solid fa-money-bill-wave"></i></span>
-          <span class="filterText">Économique</span>
-        </a>
-      </div>
-      <div class="filter">
-        <a href="#"><span><i class="fa-solid fa-person"></i></span>
-          <span class="filterText">Familial</span>
-        </a>
-      </div>
-      <div class="filter">
-        <a href="#"><span><i class="fa-solid fa-heart"></i></span>
-          <span class="filterText">Romantique</span>
-        </a>
-      </div>
-      <div class="filter">
-        <a href="#"><span><i class="fa-solid fa-dog"></i></span>
-          <span class="filterText">Animaux autorisés</span>
-        </a>
+      <div id="filterSectionCategory">
+        <div class="filter">
+          <a href="#"><span><i class="fa-solid fa-money-bill-wave"></i></span>
+            <span class="filterText">Économique</span>
+          </a>
+        </div>
+        <div class="filter">
+          <a href="#"><span><i class="fa-solid fa-person"></i></span>
+            <span class="filterText">Familial</span>
+          </a>
+        </div>
+        <div class="filter">
+          <a href="#"><span><i class="fa-solid fa-heart"></i></span>
+            <span class="filterText">Romantique</span>
+          </a>
+        </div>
+        <div class="filter">
+          <a href="#"><span><i class="fa-solid fa-dog"></i></span>
+            <span class="filterText">Animaux autorisés</span>
+          </a>
+        </div>
       </div>
     </div>
     <div id="disponibleLocation">
-      <h3>
-        <i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles
-        dans cette ville
-      </h3>
+      <div id="disponibleLocationLogo"><i class="fa-solid fa-info"></i></div>
+      <div id="disponibleLocationText">
+        <h3>
+          Plus de 500 logements sont disponibles
+          dans cette ville
+        </h3>
+      </div>
     </div>
     <div id="mainAndPopular">
       <section id="mainSection">

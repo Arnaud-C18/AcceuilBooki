@@ -38,15 +38,24 @@ img {
   object-position: center;
 }
 
+.fa-solid:nth-of-type(5) {
+  color: #d9d9d9;
+}
+
+
 /*header*/
 /*navigateur*/
 
 nav {
   font-size: 16px;
   display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
 }
 
 #logoBooki {
+  display: block;
   height: 19px;
   width: 61px;
   margin-top: 44px;
@@ -55,25 +64,44 @@ nav {
 
 #navMenu {
   display: flex;
-  margin-right: 52px;
+  padding: 0px;
+  margin: 0px;
+  width: 300px;
+  height: 100px;
+}
+
+#navMenu ul {
+  display: flex;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#navMenu li {
+  display: flex;
+  height: 100%;
+  width: 50%;
 }
 
 #navMenu a {
-  display: block;
-  padding-top: 48px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 15px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navMenu li:hover {
+  border-top: 2px solid #0065fc;
+  height: 98px;
 }
 
 #navMenu a:hover {
   color: #0065fc;
-  border-top: 2px solid #0065fc;
-  padding-top: 46px;
 }
 
 #title {
-  margin-top: 54px;
+  margin-top: 35px;
   margin-left: 35px;
 }
 
@@ -96,9 +124,8 @@ nav {
 }
 
 #locationLogo {
-  height: 48px;
-  width: 48px;
-  margin-left: 1px;
+  height: 50px;
+  width: 49px;
   display: flex;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
@@ -106,32 +133,47 @@ nav {
 
 #cityName {
   height: 48px;
-  background-color: white;
-  padding: 16px;
+  width: 248px;
+}
+
+#cityName input {
+  height: 100%;
+  width: 100%;
+  padding-left: 16px;
   font-size: 18px;
   font-weight: 700;
   border-style: none;
 }
 
-#cityName::placeholder {
+#cityName input::placeholder {
   font-size: 18px;
   font-weight: 700;
   color: black;
 }
 
-#search a {
-  color: white;
+#searchLetter {
   background-color: #0065fc;
   font-size: 18px;
   font-weight: 700;
-  height: 48px;
-  padding-left: 16px;
-  padding-right: 16px;
+  height: 50px;
+  width: 132px;
   display: flex;
   align-items: center;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  margin-right: 1px;
+}
+
+#searchLetter a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+#searchLogo {
+  display: none;
 }
 
 /*filtres*/
@@ -147,9 +189,15 @@ nav {
 
 #filterSectionTitle {
   height: 21px;
-  width: 54px;
+  width: 10%;
   margin: 0px;
   margin-top: 15px;
+}
+
+#filterSectionCategory {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 .filter {
@@ -186,25 +234,41 @@ nav {
 }
 
 #disponibleLocation {
+  display: flex;
+  justify-content: space-between;
   margin-top: 25px;
-  margin-left: 49px;
+  margin-left: 42px;
+  width: 450px;
 }
 
-#disponibleLocation i {
-  width: 4px;
-  height: 10px;
-  color: #0065fc;
-  padding-left: 9px;
-  padding-right: 11px;
-  padding-top: 4px;
-  padding-bottom: 10px;
+#disponibleLocationLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
   margin-right: 11px;
   border: 1px solid #d9d9d9;
   border-radius: 100px;
 }
 
+#disponibleLocationLogo i {
+  color: #0065fc;
+  width: 4px;
+  height: 10px;
+  padding-left: 9px;
+  padding-right: 11px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+}
+
+#disponibleLocationText {
+  display: flex;
+}
+
 #mainAndPopular {
   display: flex;
+  margin-top: 30px;
 }
 
 /*hebergements*/
@@ -212,7 +276,6 @@ nav {
 #mainSection {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   margin-left: 2%;
   height: 626px;
   width: 63%;
@@ -242,7 +305,7 @@ nav {
 }
 
 .mainSectionArticle {
-  width: 28%;
+  width: 30%;
   height: 199px;
   margin: 0px;
   border-radius: 20px;
@@ -261,7 +324,7 @@ nav {
 
 .mainSectionArticleImage {
   display: block;
-  width: 246px;
+  width: 100%;
   height: 126px;
 }
 
@@ -312,7 +375,6 @@ nav {
 #popularSection {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   margin-left: 42px;
   margin-right: 2%;
   height: 625px;
@@ -408,7 +470,7 @@ nav {
   display: block;
   width: 74px;
   margin-left: 0px;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
   font-size: 13px;
 }
 
@@ -514,7 +576,7 @@ footer {
 
 /*affichage tablette*/
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
   #filterSection {
     margin-left: 2%;
@@ -588,9 +650,219 @@ footer {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
-  * {
-    background-color: green;
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #logoBooki {
+    margin: auto;
+    margin-top: 21px;
+  }
+
+  #navMenu {
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+  }
+
+  #navMenu li:hover {
+    border-top: 0px;
+    border-bottom: 3px solid #0065fc;
+    height: 47px;
+  }
+
+  #title {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  #subtitle {
+    margin-top: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #searchBar {
+    margin-top: 36px;
+    margin-left: 22px;
+    margin-right: 22px;
+    width: auto;
+  }
+
+  #cityName {
+    display: block;
+    width: 90%;
+  }
+
+  #searchLetter {
+    display: none;
+  }
+
+  #searchLogo {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #0065fc;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  #searchLogo a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  #filterSection {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  #filterSectionCategory {
+    margin: 0px;
+    margin-top: 15px;
+    height: 117px;
+    flex-wrap: wrap;
+  }
+
+  .filter {
+    display: flex;
+    width: 45%;
+    max-width: 160px;
+    height: 50px;
+    font-size: 11px;
+    padding: 0px;
+    margin: 0%;
+  }
+
+  .filter i {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+
+  .filterText {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+  }
+
+  #disponibleLocation {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 22px;
+    width: auto;
+  }
+
+  #disponibleLocationText {
+    margin-top: 25px;
+  }
+
+  #mainAndPopular {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+
+  #popularSection {
+    border-radius: 0px;
+    width: 100%;
+    height: 580px;
+    margin: 0px;
+    
+  }
+
+  #popularSectionRow {
+    flex-direction: column;
+    height: 465px;
+  }
+
+  .popularSectionArticle {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 11px;
+    width: auto;
+  }
+
+  #mainSection {
+    border-radius: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 1400px;
+    background-color: white;
+  }
+
+  #mainSectionTitle {
+    margin-top: 26px;
+    margin-left: 20px;
+  }
+
+  #mainSectionFirstRow {
+    flex-direction: column;
+    margin: 0px;
+    margin-top: 26px;
+  }
+
+  #mainSectionSecondRow {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .mainSectionArticle {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    margin-bottom: 12px;
+  }
+
+  .mainSectionArticleImage {
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+    height: 124px;
+  }
+  
+  .mainSectionArticleText {
+    width: 100%;
+    height: 75px;
+  }
+
+  #mainSectionSeeMore {
+    display: none;
+  }
+
+  #activitySectionTitle {
+    margin-top: 100px;
+    width: 150px;
+  }
+
+  #activitySection {
+    flex-direction: column;
+    height: 856px;
+    margin-top: 0px;
+  }
+
+  .activitySectionArticle {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    height: 190px;
+  }
+
+  .activitySectionArticleImage {
+    height: 134px;
+  }
+
+
+  footer {
+    flex-direction: column;
+    height: 501px;
+    margin-top: 80px;
   }
 }
