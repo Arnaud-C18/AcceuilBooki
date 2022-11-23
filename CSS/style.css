@@ -520,7 +520,7 @@ nav {
 
 .activitySectionArticleText {
   display: flex;
-  white-space: wrap;
+  flex-wrap: wrap;
   width: auto;
   margin-left: 6.5%;
   margin-right: 6.5%;
