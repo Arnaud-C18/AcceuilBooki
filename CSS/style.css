@@ -867,6 +867,8 @@ footer {
   footer {
     flex-direction: column;
     height: 501px;
+    margin: 0px;
+    width: auto;
     margin-top: 80px;
   }
 }
